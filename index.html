@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO DO LIST</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="MainHeading">
+      <h1>TO-DO LIST</h1>
+    </div>
+  </header>
+
+
+  <div class="section1">
+    <h2 class="heading2">Enter the Task Details</h2>
+    <input class="input1" type="text" placeholder="Enter new to-do">
+    <p><input class="input1" type="text" placeholder="Enter category" list="categoryList"></p>
+    <datalist id="categoryList">
+      <option value="High"></option>
+      <option value="Medium"></option>
+      <option value="Low"></option>
+    </datalist>
+    <button id="addBtn">save</button>
+  </div>
+
+ <div class="section2">
+   <h2 class="heading2">Tasks to be done</h2>
+  <table id="todoTable">
+    <tr>
+      <th>checkbox</th>
+      <th>to-do</th>
+      <th>Category</th>
+      <th>delete</th>
+      <th>
+        <select id="categoryFilter">
+             <option value="Filter Task">Filter Task</option>
+             <option value="High">High</option>
+             <option value="Medium">Medium</option>
+             <option value="Low">Low</option>
+        </select>
+      </th>
+    </tr>
+  </table>
+</div>
+ <footer>
+   <h4 class="footer">Done By <strong>SHIVA PRASAD REDDY</strong></h4>
+ </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
